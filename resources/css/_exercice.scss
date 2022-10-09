@@ -1,0 +1,173 @@
+/* Define standard variables and values for exercise 1 */
+
+$poids-police: bold;
+$opacity: 0.5;
+$page-title-position: center;
+$type-writing-app: arial;
+$body-table-size: 14px;
+$head-table-size: 13px;
+$background-color-app: #E92F35;
+$background-color-switch: rgb(54, 218, 54);
+$border-color-switch: rgb(14, 170, 14);
+$color-icon: #707070;
+$cursor: pointer;
+$outline: 0;
+$head-table-color: #ffffff;
+$edit-color-input: #A3A3A3;
+$border: none;
+$table-cell: middle;
+$border-radius-head-table: 10px;
+$type-writing: emoji;
+$body-app2-size: 12px;
+$bg-color-app2: #ffdab1;
+$head-table-color-app2: black;
+$border-button-app2: 0.25px solid $head-table-color-app2;
+$color-body-popup: green;
+
+#change-style {
+    background-color: $background-color-app;
+    color: $head-table-color;
+    border: 0.5px;
+    border-radius: 3px;
+    position: relative;
+    top: -20px;
+}
+
+.edit-room {
+    font-size: $body-table-size;
+    font-family: $type-writing-app;
+
+    select,
+    input {
+        color: $edit-color-input;
+        font-weight: $poids-police;
+    }
+
+    .modal-header {
+        background-color: $background-color-app;
+        color: $head-table-color;
+    }
+
+    .modal-body {
+        text-align: $page-title-position;
+        font-weight: $poids-police;
+        color: $color-icon;
+
+    }
+}
+
+h3 {
+    text-align: $page-title-position;
+    font-weight: $poids-police;
+    opacity: $opacity;
+}
+
+.btn-submit {
+    margin: 5px 0px 10px 0px;
+    background-color: $background-color-app;
+    color: $head-table-color;
+    border: 0.5px;
+    border-radius: 3px;
+}
+
+.btn-submit:hover {
+    background-color: #f59782;
+    color: $background-color-app;
+    font-weight: $poids-police;
+    font-size: $body-table-size;
+}
+
+.btn-yes {
+    background-color: $background-color-app;
+    color: $head-table-color;
+    font-family: $type-writing-app;
+    font-size: $head-table-size;
+    border: $border;
+    border-radius: 3px;
+}
+
+.btn-addroom {
+    color: $color-icon;
+    border: $border;
+    background: white;
+}
+
+
+
+table {
+    thead tr {
+        text-align: center;
+
+        th .param-room {
+            background-color: $background-color-app;
+            color: $head-table-color;
+            padding: 5px;
+            font-family: $type-writing-app;
+            font-weight: $poids-police;
+            font-size: $head-table-size;
+        }
+
+
+
+    }
+
+    tbody {
+        tr {
+            text-align: $page-title-position;
+            vertical-align: $table-cell;
+            font-family: $type-writing-app;
+            font-size: $body-table-size;
+
+            td {
+
+                div .modal-header {
+                    background-color: $background-color-app;
+                    color: $head-table-color;
+                }
+
+                div>h5 {
+                    font-weight: $poids-police;
+                    color: $color-icon;
+                }
+
+                button>svg {
+                    color: $color-icon;
+                    border: $border;
+                    background-color: $head-table-color;
+                }
+            }
+
+            h6 table {
+                border: $border;
+
+                thead tr {
+                    background-color: $background-color-app;
+                    color: $head-table-color;
+                    font-family: $type-writing-app;
+                }
+            }
+
+
+        }
+    }
+}
+
+.form-switch .form-check-input {
+    line-height: normal;
+    background-color: $background-color-switch;
+    border-color: $border-color-switch;
+    margin: auto;
+    outline: $outline;
+    cursor: $cursor;
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+
+.form-switch .form-check-input:checked {
+    background-color: $background-color-app;
+    border-color: $background-color-app;
+    border: $border;
+    outline: $outline;
+
+}

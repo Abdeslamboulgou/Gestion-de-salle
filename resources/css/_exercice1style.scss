@@ -1,0 +1,165 @@
+@import "_exercice.scss";
+
+
+#appstyle.change-style {
+
+    #change-style {
+        visibility: hidden;
+    }
+
+    table {
+        thead tr {
+            text-align: center;
+
+            th .param-room {
+                background-color: $bg-color-app2;
+                color: $head-table-color-app2;
+                padding: 5px;
+                border-radius: $border-radius-head-table;
+                font-family: $type-writing;
+                font-weight: $poids-police;
+                font-size: $body-app2-size;
+            }
+            
+        }
+
+        tbody {
+            tr {
+                text-align: $page-title-position;
+                vertical-align: $table-cell;
+                font-family: $type-writing;
+                font-size: $body-table-size;
+
+                td {
+                    svg {
+
+                        color: $head-table-color-app2;
+                    }
+
+                    svg:hover {
+
+                        color: $color-icon;
+                    }
+
+                    div .modal-header {
+                        background-color: $bg-color-app2;
+                        color: $color-icon;
+                    }
+
+                    div>h5 {
+                        font-weight: $poids-police;
+                        color: $color-body-popup;
+                        font-size: $body-app2-size;
+
+                    }
+
+                    button>svg {
+                        color: $head-table-color-app2;
+                        background-color: $head-table-color;
+
+                    }
+
+                    button>svg:hover {
+                        color: $color-icon;
+                        background-color: $head-table-color;
+
+                    }
+                }
+
+                h6 table {
+                    border: $border;
+
+                    thead tr {
+                        background-color: $bg-color-app2;
+                        color: $head-table-color-app2;
+                        font-family: $type-writing;
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    .form-switch .form-check-input {
+        line-height: normal;
+        background-color: $edit-color-input;
+        border-color: $color-icon;
+        margin: auto;
+        outline: $outline;
+        cursor: $cursor;
+        position: relative;
+        top: 5px;
+        left: 10px;
+    }
+
+    .form-switch .form-check-input:checked {
+        background-color: $head-table-color-app2;
+        border-color: $background-color-app;
+        border: $border;
+        outline: $outline;
+
+    }
+
+    .btn-submit {
+        margin: 5px 0px 10px 0px;
+        background-color: $head-table-color;
+        color: $head-table-color-app2;
+        border: $border-button-app2;
+    }
+
+    .btn-submit:hover {
+        background-color: $head-table-color-app2;
+        color: $head-table-color;
+        font-weight: $poids-police;
+        font-size: $body-table-size;
+    }
+
+    .btn-yes {
+        background-color: $bg-color-app2;
+        color: $head-table-color-app2;
+        font-family: $type-writing;
+        font-size: $body-app2-size;
+        border: $border;
+        border-radius: 3px;
+    }
+
+    .btn-addroom {
+        color: $head-table-color-app2;
+        background-color: white;
+        float: left;
+    }
+
+    .btn-addroom:hover {
+        background-color: $head-table-color-app2;
+        color: $head-table-color;
+        font-weight: $poids-police;
+    }
+
+    .edit-room {
+        font-size: $body-app2-size;
+        font-family: $type-writing;
+
+        select,
+        input {
+            color: $edit-color-input;
+            font-weight: $poids-police;
+        }
+
+        .modal-header {
+            background-color: $bg-color-app2;
+            color: $color-icon;
+        }
+
+        .modal-body {
+            text-align: $page-title-position;
+            font-weight: $poids-police;
+            color: $color-body-popup;
+
+            p {
+                font-weight: $poids-police;
+                color: $color-body-popup;
+            }
+        }
+    }
+}

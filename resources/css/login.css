@@ -1,0 +1,26 @@
+.login_label
+{
+    text-align: left;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: #82817F;  
+    width: 980px;
+}
+
+.login_input
+{
+    border: solid 2px #707070;
+    margin-left:20px;
+    height:60px;
+    width:350px;
+    text-align: left;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    color: #618C42;    
+  
+    border-color: #ABA5A5;
+}
